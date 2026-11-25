@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bovinos productores de carne · Medicina Veterinaria</title>
+<style>
+:root{color-scheme:light;--ink:#182d29;--muted:#455e57;--accent:#006552;--pale:#edf6f1;--line:#cfdfd7;--warm:#faf1e4}*{box-sizing:border-box}body{margin:0;background:white;color:var(--ink);font:1rem/1.6 system-ui,sans-serif}main,.wrap{width:min(1080px,calc(100% - 32px));margin:auto}header{border-bottom:1px solid var(--line);padding:13px 0;color:var(--accent);font-weight:750}h1,h2{font-family:Georgia,serif;line-height:1.08;letter-spacing:-.035em}h1{font-size:clamp(2.6rem,7vw,5rem);margin:.2em 0}h2{font-size:clamp(1.9rem,4vw,3.1rem);margin:.2em 0 .5em}h3{line-height:1.2;margin:1.4em 0 .5em}p{margin:.55em 0 1em}a{color:var(--accent)}nav{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}nav a,button{border:1px solid var(--line);border-radius:9px;background:white;color:var(--accent);padding:8px 12px;font:inherit;font-weight:700}nav a{text-decoration:none}button{cursor:pointer}button:hover,nav a:hover{background:var(--pale)}:focus-visible{outline:3px solid #a75b1c;outline-offset:3px}.hero{padding:32px 0 10px;display:grid;grid-template-columns:1.7fr 1fr;gap:22px;align-items:center}.hero img{width:100%;max-height:240px;object-fit:contain;background:#f8f3e9;border-radius:20px}.hero p,.source{color:var(--muted)}section{border-top:1px solid var(--line);padding:34px 0;scroll-margin-top:14px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:12px}.card,.lab,details{padding:15px 17px;border:1px solid var(--line);border-radius:12px;margin:.7em 0}.card,.lab{background:var(--pale)}.card h3,.lab h3{margin-top:0}.note{background:var(--warm);padding:10px 14px;border-radius:9px}summary{cursor:pointer;font-weight:750;color:var(--accent)}.scroll{overflow:auto}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}thead{background:var(--pale)}.source{font-size:.9rem}.form{display:flex;flex-wrap:wrap;gap:12px;align-items:end}.form label{display:grid;gap:4px}.form input,.form select{width:145px;padding:7px;border:1px solid #788d83;border-radius:6px;font:inherit;background:white;color:var(--ink)}.result{min-height:1.6em;margin-top:10px;font-weight:650}.barrow{display:grid;grid-template-columns:105px 1fr 57px;align-items:center;gap:8px;margin:5px 0}.track{height:14px;background:#fff;border-radius:10px;overflow:hidden}.fill{height:100%;background:#12725e}.fill.alt{background:#a85d2c}.audio{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.audio .status{align-self:center;color:var(--muted)}fieldset{border:0;padding:0;margin:0}legend{font-weight:750;padding:0}.choice{display:block;padding:6px 0}.actions{display:flex;flex-wrap:wrap;gap:8px}footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted)}@media(max-width:620px){.hero{grid-template-columns:1fr}.hero img{max-height:152px}section{padding:25px 0}}
+.matching{margin-top:20px}.match-row{margin:.65em 0}.match-row label{display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,2fr);gap:8px;align-items:center;font-weight:650}.match-row select{min-width:0;width:100%;padding:8px;border:1px solid #788d83;border-radius:7px;background:white;color:var(--ink);font:inherit}.match-note{margin:3px 0;font-size:.94rem}.match-note[data-result=correct]{color:#005542}.match-note[data-result=incorrect]{color:#8a271d}.matching dd{margin:0 0 8px}.matching button:disabled{opacity:.65;cursor:default}@media(max-width:620px){.match-row label{grid-template-columns:1fr;gap:2px}}
+</style>
+<body><header><div class="wrap">Medicina Veterinaria</div></header>
+<main><div class="hero"><div><h1>Bovinos productores de carne</h1><p>Estudia cómo se complementa el pastoreo, cómo se adapta al ganado a la dieta de corral y cómo se evalúan el desempeño y la carne.</p></div><img src="data:image/webp;base64,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" alt="Bovino de carne en etapa de finalización"></div><nav aria-label="Módulos"><a href="#sistemas">Sistemas</a><a href="#nutrientes">Energía y proteína</a><a href="#ingredientes">Ingredientes</a><a href="#corral">Manejo del corral</a><a href="#seguimiento">Seguimiento</a><a href="#repaso">Repaso</a></nav><noscript>Activa JavaScript para utilizar las prácticas, el audio y el repaso.</noscript><section id="sistemas"><h2>Sistemas de producción y complementación</h2>
+<p>El objetivo cambia desde producir un becerro al destete hasta obtener un animal terminado. La disponibilidad estacional del forraje y el destino comercial explican por qué la presentación muestra sistemas distintos entre regiones.</p>
+<div class="grid"><article class="card"><h3>Vaca–becerro</h3><p>El producto de esta fase es el becerro. El manejo del agostadero y la condición de la vaca influyen en la crianza y en la continuidad reproductiva del hato.</p></article><article class="card"><h3>Preengorda en pastoreo</h3><p>Las praderas sostienen el crecimiento. Si el forraje deja un déficit, se elige una complementación proteica, energética o mineral según lo que falte.</p></article><article class="card"><h3>Engorda en corral</h3><p>Permite controlar la oferta de alimento y vigilar el consumo. La dieta cambia con los antecedentes del ganado, su peso y su adaptación a los granos.</p></article></div>
+<details><summary>Ejemplos regionales y opciones de complemento</summary><p>La presentación describe preengorda en praderas irrigadas en zonas áridas y semiáridas, y aprovechamiento de praderas de estrella y guinea en regiones tropicales. Como opciones de complementación lista henos, ensilados, subproductos, sales minerales, bancos de proteína, bloques multinutricionales y sistemas agrosilvopastoriles.</p></details>
+<p class="note"><strong>Caso.</strong> Si el análisis del pasto indica un aporte insuficiente de proteína, identifica primero ese déficit. La comparación de suplementos se hace por el aporte que cubre la necesidad del lote.</p>
+<p class="source">Presentación, pp. 16, 19–21 y 30.</p></section>
+
+<section id="nutrientes"><h2>Energía, proteína y ganancia de peso</h2>
+<p>El consumo de materia seca (CMS) indica cuántos kg de alimento sin agua ingiere el animal por día. La ganancia diaria de peso (GDP) indica cuánto peso vivo añade por día durante el periodo observado. El peso de entrada, la condición y la clase del ganado ayudan a interpretar ambos datos.</p>
+<div class="grid"><article class="card"><h3>Energía neta de mantenimiento</h3><p>Cubre las funciones básicas. Una dieta puede expresar su densidad de ENm en Mcal/kg de MS y un animal su requerimiento en Mcal/día.</p></article><article class="card"><h3>Energía neta de ganancia</h3><p>Se relaciona con la energía retenida en los tejidos nuevos. Una vez cubierto el mantenimiento, la dieta y el consumo condicionan cuánta energía queda disponible para ganar peso.</p></article><article class="card"><h3>Proteína en el rumen</h3><p>La fracción degradable aporta nitrógeno a los microorganismos. Parte de la proteína no degradable pasa al intestino y, si es digestible, aporta aminoácidos. La proteína cruda total reúne ambas fracciones y el nitrógeno no proteico.</p></article></div>
+<div class="lab"><h3>Práctica de energía</h3><p>Usa la ecuación de la presentación con una dieta de ejemplo: ENg = 0.877 × ENm − 0.41.</p><form id="energy-form" class="form"><label>ENm (Mcal/kg MS)<input name="energy" type="number" min="1.81" max="3" step="0.01" value="2.31" required></label><button>Calcular ENg</button></form><p id="energy-result" class="result" role="status"></p><p>La p. 42 sitúa la estimación productiva con este enfoque en dietas de más de 1.8 Mcal/kg de ENm. El resultado de la práctica expresa densidad energética, en Mcal/kg de MS.</p></div>
+<details><summary>Ejemplo de la presentación: novillo de 418 kg</summary><p>Con ENm de 2.31 Mcal/kg, la dieta aporta aproximadamente 1.62 Mcal de ENg/kg. El ejemplo estima 7.12 Mcal/d de mantenimiento, equivalentes a 3.08 kg de MS de esa dieta. De los 7.27 kg MS consumidos, el ejercicio asigna 4.19 kg a ganancia. Multiplicar 4.19 por 1.62 da 6.79 Mcal/d de energía retenida estimada.</p></details>
+<p class="source">Presentación, pp. 21, 30–32, 40–42 y 60–62.</p></section>
+
+<section id="ingredientes"><h2>Ingredientes y función en la ración</h2>
+<p>Las cifras de las páginas 40–46 son referencias de la presentación para estudiar dietas de engorda. Los porcentajes de inclusión corresponden a los ejemplos indicados y deben interpretarse junto con la composición de la ración.</p>
+<h3>Fuentes de nitrógeno</h3>
+<div class="scroll"><table><caption>Presentación, p. 40</caption><thead><tr><th scope="col">Fuente o componente</th><th scope="col">Datos e indicaciones</th></tr></thead><tbody>
+<tr><th scope="row">Proteína cruda (PC)</th><td>11–14 % en el contexto de la diapositiva. Distingue la <strong style="color:#a52720">proteína degradable en rumen (PDR)</strong> de la <strong style="color:#145293">proteína no degradable en rumen (PNR)</strong>.</td></tr>
+<tr><th scope="row">Urea</th><td>Fuente de nitrógeno no proteico (NNP), indicada como <strong style="color:#a52720">100 % degradable en rumen</strong>. La diapositiva ilustra <strong style="color:#145293">0.5 % en iniciación con alto forraje</strong> y <strong style="color:#a52720">1.3 % en finalización con carbohidratos fácilmente fermentables</strong>. Son ejemplos de formulación de clase.</td></tr>
+<tr><th scope="row">Pastas oleaginosas</th><td><strong style="color:#a52720">55–85 % PDR</strong>, según la referencia de la diapositiva.</td></tr>
+<tr><th scope="row">Harinas animales</th><td><strong style="color:#145293">55–83 % PNR</strong> como referencia de composición de la diapositiva.</td></tr>
+<tr><th scope="row">Aminoácidos</th><td>Lisina, metionina e histidina se mencionan para animales en crecimiento.</td></tr>
+</tbody></table></div>
+<h3>Fuentes de energía</h3>
+<div class="scroll"><table><caption>Presentación, pp. 41–42</caption><thead><tr><th scope="col">Fuente o concepto</th><th scope="col">Datos e indicaciones</th></tr></thead><tbody>
+<tr><th scope="row">Almidón y otros azúcares</th><td>Carbohidratos de rápida digestión. La diapositiva destaca <strong style="color:#a52720">52 % de almidón en la ración</strong> como cifra del material. Relaciona el procesamiento del grano y la disponibilidad del almidón con el riesgo de acidosis.</td></tr>
+<tr><th scope="row">Carbohidratos fibrosos</th><td>La p. 41 cita <strong style="color:#145293">4–8 % de FDN</strong> en este contexto de engorda. La p. 50 aclara el intervalo como aporte de <strong>FDN proveniente del forraje</strong> en la dieta. El material señala que un aporte mayor de fibra puede limitar consumo y ganancia.</td></tr>
+<tr><th scope="row">Grasas</th><td><strong style="color:#145293">2–5 % de inclusión</strong> como referencia de la diapositiva. El material indica unas 2.5 veces más energía, 6.0 Mcal/kg de ENm y 4.85 Mcal/kg de ENg, y cita 3 % como límite del ejemplo para dietas con más de 30 % de forraje.</td></tr>
+<tr><th scope="row">Semilla de algodón</th><td>23–25 % de grasa según la diapositiva.</td></tr>
+<tr><th scope="row">Sistema de energía neta</th><td>El ejemplo de clase vincula <strong style="color:#a52720">la energía de la dieta y su eficiencia de utilización</strong>, y estima la productividad a partir de la <strong style="color:#145293">energía neta consumida</strong>. ENg = 0.877 × ENm − 0.41. La diapositiva indica aplicabilidad con más de 1.8 Mcal/kg de ENm y menciona 2.0–2.3 Mcal/kg de ENm en dietas típicas de finalización.</td></tr>
+</tbody></table></div>
+<h3>Minerales</h3>
+<div class="scroll"><table><caption>Presentación, pp. 43 y 45</caption><thead><tr><th scope="col">Mineral</th><th scope="col">Datos e indicaciones</th></tr></thead><tbody>
+<tr><th scope="row">Calcio (Ca)</th><td>Los cereales aparecen con <strong style="color:#145293">0.03 % de Ca</strong>. El rango de dieta citado es <strong style="color:#a52720">0.6–0.9 %</strong>. Se menciona carbonato de calcio (CaCO₃) como fuente.</td></tr>
+<tr><th scope="row">Fósforo (P)</th><td>Cereales <strong style="color:#145293">0.35–0.40 %</strong> y forrajes <strong style="color:#145293">0.15–0.25 %</strong>. El rango de dieta citado es <strong style="color:#a52720">0.25–0.40 %</strong>, con posible suplementación en iniciación.</td></tr>
+<tr><th scope="row">Potasio (K)</th><td>Forrajes relativamente ricos y cereales pobres. La diapositiva cita <strong style="color:#a52720">0.5–0.6 %</strong> como requerimiento de referencia y <strong style="color:#a52720">1.0–1.2 %</strong> en dietas de recepción.</td></tr>
+<tr><th scope="row">Magnesio (Mg)</th><td>Referencia de <strong style="color:#a52720">0.10 %</strong>. Cereales <strong style="color:#145293">0.11–0.17 %</strong>, leguminosas <strong style="color:#145293">0.25 %</strong> y gramíneas <strong style="color:#145293">0.17 %</strong>. La diapositiva menciona estudios con <strong style="color:#a52720">0.28–0.32 %</strong> asociados con mejoras en ganancia y conversión.</td></tr>
+<tr><th scope="row">Azufre (S)</th><td><strong style="color:#a52720">0.1 %</strong> y relación <strong style="color:#145293">nitrógeno:azufre de 10:1 o 15:1</strong>, según el material.</td></tr>
+<tr><th scope="row">Microminerales</th><td><strong style="color:#a52720">mg por kg de alimento en base seca</strong>: cobalto 0.1, cobre 10, yodo 1, hierro 50–100, manganeso 40, molibdeno 2, zinc 30–50 y selenio 0.1.</td></tr>
+</tbody></table></div>
+<div class="scroll"><table><caption>Comparación de potasio en recepción, p. 44. Resultados del ejemplo de la diapositiva</caption><thead><tr><th scope="col">Indicador</th><th scope="col" style="color:#145293">0.8 % K</th><th scope="col" style="color:#a52720">1.3 % K</th></tr></thead><tbody>
+<tr><th scope="row">Peso inicial (kg)</th><td>205</td><td>200</td></tr><tr><th scope="row">Mortalidad (%)</th><td>7.5</td><td><strong style="color:#a52720">1.1</strong></td></tr><tr><th scope="row">Tratados (%)</th><td>34.4</td><td><strong style="color:#a52720">30.8</strong></td></tr><tr><th scope="row">Días de tratamiento</th><td>5.9</td><td>6.2</td></tr><tr><th scope="row">Consumo (kg MS)</th><td>5.3</td><td>5.2</td></tr><tr><th scope="row">Ganancia diaria de peso (kg)</th><td>0.62</td><td><strong style="color:#a52720">0.74</strong></td></tr><tr><th scope="row">Conversión</th><td>8.53</td><td><strong style="color:#a52720">6.95</strong></td></tr>
+</tbody></table></div>
+<h3>Vitaminas</h3>
+<div class="scroll"><table><caption>Presentación, p. 46</caption><thead><tr><th scope="col">Vitamina</th><th scope="col">Datos e indicaciones</th></tr></thead><tbody>
+<tr><th scope="row">Vitamina A</th><td><strong style="color:#a52720">2,200–3,300 UI/kg de MS</strong>. La presentación también describe, como ejemplo de clase, una administración inyectable de 1 millón de UI a la recepción y una reserva estimada de cuatro meses. La primera cifra de la fila corresponde a la concentración en el alimento.</td></tr>
+<tr><th scope="row">Vitamina E</th><td><strong style="color:#a52720">15–60 UI/kg de MS</strong>. La diapositiva menciona que puede venir incluida en complejos ADE. Revisa el aporte del producto y de la dieta completa.</td></tr>
+</tbody></table></div>
+<div id="actividad-nutrientes"></div>
+<h3>Ingredientes más utilizados</h3>
+<div class="scroll"><table><thead><tr><th>Ingrediente o grupo</th><th>Cómo se usa en los ejemplos</th></tr></thead><tbody>
+<tr><td>Maíz, sorgo y trigo</td><td>Fuentes de almidón. El procesamiento modifica su disponibilidad para la fermentación. Debe considerarse junto con el nivel de inclusión y la adaptación del ganado.</td></tr>
+<tr><td>Pastas de oleaginosas</td><td>Fuentes de proteína. La proporción degradable en rumen varía entre ingredientes y procesos.</td></tr>
+<tr><td>Urea</td><td>Fuente de nitrógeno no proteico para los microorganismos ruminales. Requiere formulación y mezclado controlados.</td></tr>
+<tr><td>Henos, pajas y ensilados</td><td>Aportan fibra. Cada forraje contiene una fracción distinta de FDN, por lo que igual inclusión no equivale a igual aporte de FDN.</td></tr>
+<tr><td>Melaza y otros subproductos</td><td>La melaza aporta azúcares y se incluye en los ejemplos de la p. 56. El aporte de otros subproductos depende de su composición.</td></tr>
+<tr><td>Carbonato de calcio y sales minerales</td><td>El carbonato ayuda a cubrir calcio. Las sales minerales complementan el aporte según las deficiencias de la ración.</td></tr>
+<tr><td>Vitaminas y aditivos</td><td>La clase menciona vitaminas A y E, ionóforos y bicarbonato. El bicarbonato se presenta como amortiguador del pH, y los ionóforos como modificadores de la fermentación.</td></tr>
+</tbody></table></div>
+<div class="lab"><h3>Calcula la FDN que aporta el forraje</h3><p>Ingresa la inclusión en base seca y la FDN del ingrediente. Con 10 % de heno de alfalfa que contiene 40 % de FDN, el aporte es 4 % de la MS de la dieta. Con 7 % de heno de Sudán al 58 % FDN, el aporte es 4.06 %.</p><form class="form" id="fiber-form"><label>Inclusión (% MS)<input name="inclusion" type="number" min="0" max="100" step="any" value="10" required></label><label>FDN del forraje (%)<input name="fiber" type="number" min="0" max="100" step="any" value="40" required></label><button>Calcular aporte</button></form><p id="fiber-result" class="result" role="status"></p></div>
+<p class="source">Presentación, pp. 40–51 y 56.</p></section>
+
+<section id="corral"><h2>Recepción, iniciación, transición y finalización</h2>
+<p>En corral, la adaptación permite que el rumen responda gradualmente a una mayor proporción de concentrado. La velocidad del cambio y la regularidad del consumo importan al interpretar el comportamiento del lote.</p>
+<div class="scroll"><table><caption>Dos esquemas de recepción de la presentación</caption><thead><tr><th>Esquema</th><th>Forraje</th><th>Duración</th><th>Referencia</th></tr></thead><tbody><tr><td>Estrategia de recepción</td><td>Solo forraje</td><td>3–5 días</td><td>p. 54</td></tr><tr><td>Ejemplo de recepción y adaptación a dietas altas en grano</td><td>45 % de forraje</td><td>5–7 días</td><td>p. 57</td></tr></tbody></table></div>
+<div class="grid"><article class="card"><h3>Iniciación</h3><p>La p. 54 ejemplifica 35 % de forraje para livianos y 45 % para pesados. El criterio de avance de esa fase se vincula con alcanzar un consumo cercano al 3 % del peso corporal en ese esquema.</p></article><article class="card"><h3>Transición</h3><p>El ejemplo de la p. 57 pasa por dietas de 30 y 20 % de forraje, con 5–7 días en cada una. La p. 54 pide al menos cinco días seguidos de consumo estable como criterio para cambiar de ración.</p></article><article class="card"><h3>Finalización</h3><p>La estrategia de la p. 54 describe una reducción de 12 a 6 % de forraje. La p. 58 ilustra otras dietas con 15, 10 y 8 %, y 11.5–12 % de PC. Cada rango conserva su contexto.</p></article></div>
+<details><summary>Compara densidad de energía y proteína</summary><div class="scroll"><table><caption>Perfiles de la p. 56</caption><thead><tr><th>Ración</th><th>ENm (Mcal/kg)</th><th>PC (%)</th><th>FDN (%)</th></tr></thead><tbody><tr><td>Inicial</td><td>1.7–1.9</td><td>14</td><td>17–19</td></tr><tr><td>Transición</td><td>2.0–2.1</td><td>13</td><td>10–12</td></tr><tr><td>Finalización</td><td>2.2–2.3</td><td>12</td><td>4–8</td></tr></tbody></table></div></details>
+<h3>Lectura del comedero</h3><p>El ejemplo de la p. 52 usa una escala de 1 a 4: comedero lamido, sobra menor de 5 % con alimento visible, sobra entre 5 y 10 % y sobra superior a 10 %. Lee el comedero en condiciones comparables e interpreta el resultado junto con el registro de oferta, consumo y días en la ración.</p>
+<div class="lab"><h3>Decide si el lote puede avanzar</h3><label for="stable">Días consecutivos con consumo estable</label> <select id="stable"><option value="3">3 días</option><option value="5">5 días</option><option value="7">7 días</option></select><p id="stable-result" class="result" role="status"></p></div>
+<p class="source">Presentación, pp. 52–59. <a href="#r-brown">Brown et al.</a></p></section>
+
+<section id="seguimiento"><h2>Seguimiento y calidad de carne</h2>
+<p>Durante la engorda registra días con la ración, consumo y condición del lote. La GDP se calcula dividiendo el cambio de peso entre los días transcurridos. La conversión alimenticia expresa cuántos kg de MS se consumieron por cada kg de peso ganado en el mismo periodo.</p>
+<div class="lab"><h3>Del registro de pesadas a la GDP</h3><form id="gain-form" class="form"><label>Peso inicial (kg)<input name="initial" type="number" min="1" step="any" value="320" required></label><label>Peso final (kg)<input name="final" type="number" min="1" step="any" value="362" required></label><label>Días<input name="days" type="number" min="1" value="28" required></label><button>Calcular GDP</button></form><p id="gain-result" class="result" role="status"></p></div>
+<div class="grid"><article class="card"><h3>Madurez</h3><p>Describe el desarrollo fisiológico del animal o la canal. Las edades de las clases A a E de la p. 65 son aproximadas.</p></article><article class="card"><h3>Marmoleo</h3><p>Grasa intramuscular visible en el corte. La presentación la relaciona con la palatabilidad. Es uno de varios factores que influyen en la experiencia de consumo.</p></article><article class="card"><h3>Terneza</h3><p>Facilidad con que se corta o mastica la carne. Se estudia en relación con la madurez y junto a otras características de calidad.</p></article></div>
+<details><summary>Implantes y beta-agonistas</summary><p>La p. 39 presenta implantes promotores de crecimiento con compuestos estrogénicos y otros ejemplos. La p. 69 contrasta grupos sin implante, con implante estrogénico y con estrogénico combinado con trembolona. Los beta-agonistas actúan sobre receptores adrenérgicos y se estudian por su efecto en la distribución de nutrientes y el crecimiento de tejido magro. Su uso depende de la autorización del producto, del mercado de destino y de las indicaciones aplicables. <a href="#r-johnson">Johnson et al.</a></p></details>
+<details><summary>Reconoce los cortes de la presentación</summary><div class="scroll"><table><thead><tr><th>Corte</th><th>Cómo ubicarlo</th></tr></thead><tbody><tr><td>Rib eye</td><td>Región costal.</td></tr><tr><td>New York</td><td>Lomo corto, porción del strip loin.</td></tr><tr><td>Filet mignon</td><td>Solomillo o filete.</td></tr><tr><td>T-bone y porterhouse</td><td>Lomo corto con hueso en T y piezas de lomo y filete. El porterhouse tiene una porción de filete mayor.</td></tr><tr><td>Flat iron</td><td>Región de la paleta, al preparar el músculo infraespinoso.</td></tr></tbody></table></div></details>
+<p class="source">Presentación, pp. 39, 59, 62, 65–69 y 71–72.</p></section>
+
+<section id="repaso"><h2>Repaso y calificación</h2><p>La calificación de relación de conceptos reúne los aciertos de todas las actividades. El cuestionario de abajo permite practicar con casos y repetir las preguntas falladas.</p><div id="quiz" class="lab"></div></section>
+<section id="fuentes"><h2>Fuentes</h2><p>Luis Corona Gochi. <cite>Bovinos productores de carne</cite>. Las páginas señaladas corresponden al PDF de clase.</p><ul><li id="r-brown">Brown, Ponce y Pulikanti (2006). Adaptación al concentrado y metabolismo ruminal. <a href="https://pubmed.ncbi.nlm.nih.gov/16582090/">Journal of Animal Science</a>.</li><li id="r-johnson">Johnson, Smith y Chung (2014). Efectos de los beta-agonistas en bovinos de carne. <a href="https://doi.org/10.5713/ajas.2012.12524">Asian-Australasian Journal of Animal Sciences</a>.</li></ul></section>
+</main><footer><div class="wrap">Medicina Veterinaria · Alimentación de bovinos de carne</div></footer><script>const byId=id=>document.getElementById(id);
+const fmt=(value,digits=2)=>value.toLocaleString('es-MX',{minimumFractionDigits:digits,maximumFractionDigits:digits});
+function bindForm(id,output,calculate){
+ const form=byId(id);
+ const result=byId(output);
+ const inputs=[...form.querySelectorAll('input[type="number"]')];
+ function update(){
+  if(inputs.some(input=>!input.validity.valid || !Number.isFinite(input.valueAsNumber))){
+   result.textContent='Completa los campos con números dentro de los límites indicados.';
+   return;
+  }
+  result.textContent=calculate(Object.fromEntries(inputs.map(input=>[input.name,input.valueAsNumber])));
+ }
+ form.noValidate=true;
+ form.addEventListener('input',update);
+ form.addEventListener('change',update);
+ form.addEventListener('submit',event=>{event.preventDefault();update();});
+ update();
+}
+
+bindForm('energy-form','energy-result',({energy})=>fmt(0.877*energy-0.41)+' Mcal ENg/kg MS.');
+bindForm('fiber-form','fiber-result',({inclusion,fiber})=>fmt(inclusion*fiber/100)+' % de la MS de la dieta corresponde a FDN de este forraje.');
+bindForm('gain-form','gain-result',({initial,final,days})=>fmt((final-initial)/days)+' kg de cambio de peso por día.');
+const stable=byId('stable');
+function showStable(){
+ byId('stable-result').textContent=Number(stable.value)<5
+  ? 'Aún no se cumplen los cinco días consecutivos del criterio de clase. Mantén el seguimiento del consumo.'
+  : 'Se cumple el criterio de estabilidad de la p. 54. Revisa además condición del lote y consumo antes de decidir el cambio.';
+}
+stable.addEventListener('change',showStable);
+showStable();
+const audioNotes={"sistemas": "El sistema vaca becerro produce becerros al destete. La preengorda favorece el crecimiento y el corral permite controlar la ración. En pastoreo, identifica primero qué nutriente limita el aporte del forraje.", "nutrientes": "El consumo de materia seca excluye el agua. Parte de la energía cubre el mantenimiento y otra parte puede destinarse a nuevos tejidos. La proteína degradable aporta nitrógeno a los microorganismos del rumen.", "ingredientes": "Los cereales aportan almidón. Los forrajes aportan fibra. Para calcular la contribución de FDN de un forraje, multiplica su inclusión por su contenido de fibra, ambos en base seca.", "corral": "Recepción, iniciación, transición y finalización tienen objetivos distintos. Al aumentar el concentrado, observa la estabilidad del consumo y los sobrantes. La presentación muestra dos ejemplos distintos de recepción.", "seguimiento": "La ganancia diaria se estima con dos pesadas y los días entre ellas. En la canal, el marmoleo describe grasa visible dentro del músculo y la terneza describe la facilidad de corte o masticación."};
+for(const [id,script] of Object.entries(audioNotes)){
+ const details=document.createElement('details');
+ details.innerHTML='<summary>Escuchar y leer el resumen</summary><p>'+script+'</p><div class="audio"><button type="button">Reproducir o repetir</button><button type="button">Detener</button><span class="status" role="status"></span></div>';
+ byId(id).querySelector('h2').after(details);
+ const [play,stop]=details.querySelectorAll('button');
+ const status=details.querySelector('.status');
+ if(!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)){
+  play.disabled=stop.disabled=true;
+  status.textContent='Este navegador no ofrece narración. Puedes leer el resumen.';
+ }else{
+  play.addEventListener('click',()=>{
+   speechSynthesis.cancel();
+   const speech=new SpeechSynthesisUtterance(script);
+   speech.lang='es-MX';
+   speech.rate=.94;
+   const voices=speechSynthesis.getVoices();
+   speech.voice=voices.find(voice=>voice.lang==='es-MX')||voices.find(voice=>voice.lang.startsWith('es'))||null;
+   speech.onstart=()=>status.textContent='Reproduciendo.';
+   speech.onend=()=>status.textContent='Resumen terminado.';
+   speech.onerror=event=>{
+    if(!['canceled','interrupted'].includes(event.error))status.textContent='La narración no está disponible. Puedes leer el resumen.';
+   };
+   speechSynthesis.speak(speech);
+  });
+  stop.addEventListener('click',()=>{speechSynthesis.cancel();status.textContent='Audio detenido.';});
+ }
+}
+
+const prompts=[["El forraje analizado aporta poca proteína. ¿Qué conviene revisar primero?", ["Una fuente proteica", "La clase de marmoleo", "La duración de la finalización"], 0, "El diagnóstico del déficit orienta la complementación.", "sistemas"], ["¿Qué indica una ENm de 2.31 Mcal/kg MS?", ["La energía diaria del animal", "La densidad de energía neta de mantenimiento de la dieta", "La GDP esperada"], 1, "La unidad por kg de MS describe la dieta.", "nutrientes"], ["Se usa 10 % de heno con 40 % de FDN. ¿Qué aporta a la dieta?", ["40 %", "10 %", "4 % de FDN en la MS de la dieta"], 2, "Multiplica 0.10 por 40 %.", "ingredientes"], ["El lote lleva tres días de consumo estable. ¿Cumple el criterio de la p. 54?", ["Todavía no, la diapositiva pide cinco días consecutivos", "Sí, ya debe pasar a finalización", "Depende solo del peso inicial"], 0, "La estabilidad durante cinco días es el criterio citado. Revisa también el estado del lote.", "corral"], ["¿Cómo se interpreta la recepción con 45 % de forraje durante 5–7 días?", ["Como el esquema de solo forraje", "Como un ejemplo distinto de la p. 57", "Como una regla para todos los corrales"], 1, "La p. 57 muestra ese ejemplo de recepción y adaptación a dietas altas en grano.", "corral"], ["De 320 a 362 kg en 28 días. ¿Cuál es la GDP?", ["42 kg/d", "1.25 kg/d", "1.50 kg/d"], 2, "La diferencia son 42 kg, divididos entre 28 días.", "seguimiento"], ["¿Qué describe el marmoleo?", ["La grasa intramuscular visible", "El consumo por día", "La edad fisiológica de la canal"], 0, "El marmoleo es un atributo de la carne.", "seguimiento"]];
+const quiz=byId('quiz');
+let queue=[],selected=new Map(),checked=new Set(),position=0;
+function startQuiz(ids){
+ queue=[...ids];
+ selected.clear();
+ checked.clear();
+ position=0;
+ showQuestion();
+}
+function showQuestion(){
+ const index=queue[position];
+ const [question,answers,correct,reason,section]=prompts[index];
+ quiz.innerHTML='<p class="source" id="question-position" tabindex="-1">Pregunta '+(position+1)+' de '+queue.length+
+  ' · '+selected.size+' respondidas</p><form><fieldset><legend>'+question+'</legend>'+
+  answers.map((answer,i)=>'<label class="choice"><input type="radio" name="answer" value="'+i+'"'+
+   (selected.get(index)===i?' checked':'')+' required> '+answer+'</label>').join('')+
+  '</fieldset><button>Comprobar</button></form><p id="feedback" role="status" class="result"></p>'+
+  '<div class="actions"><button id="previous-question"'+(position===0?' disabled':'')+'>Anterior</button>'+
+  '<button id="next-question"'+(position===queue.length-1?' disabled':'')+'>Siguiente</button>'+
+  '<label>Ir a la pregunta <select id="jump-question">'+queue.map((_,i)=>'<option value="'+i+'"'+
+   (position===i?' selected':'')+'>'+(i+1)+'</option>').join('')+'</select></label>'+
+  '<button id="finish-quiz">Ver resultado</button></div>';
+ const form=quiz.querySelector('form');
+ const feedback=byId('feedback');
+ function showFeedback(){
+  feedback.innerHTML=(selected.get(index)===correct?'Correcto. ':'Respuesta esperada: '+answers[correct]+'. ')+
+   reason+' <a href="#'+section+'">Volver al tema</a>.';
+ }
+ if(checked.has(index))showFeedback();
+ form.addEventListener('change',event=>{
+  selected.set(index,Number(event.target.value));
+  checked.delete(index);
+  feedback.textContent='';
+  byId('question-position').textContent='Pregunta '+(position+1)+' de '+queue.length+' · '+selected.size+' respondidas';
+ });
+ form.addEventListener('submit',event=>{
+  event.preventDefault();
+  checked.add(index);
+  showFeedback();
+ });
+ byId('previous-question').onclick=()=>goToQuestion(position-1);
+ byId('next-question').onclick=()=>goToQuestion(position+1);
+ byId('jump-question').onchange=event=>goToQuestion(Number(event.target.value));
+ byId('finish-quiz').onclick=showQuizResult;
+}
+function goToQuestion(next){
+ position=next;
+ showQuestion();
+ byId('question-position').focus();
+}
+function showQuizResult(){
+ const pending=queue.findIndex(index=>!selected.has(index));
+ if(pending!==-1){
+  goToQuestion(pending);
+  byId('feedback').textContent='Responde las '+(queue.length-selected.size)+' preguntas pendientes para ver tu calificación.';
+  return;
+ }
+ const missed=queue.filter(index=>selected.get(index)!==prompts[index][2]);
+ const correct=queue.length-missed.length;
+ quiz.innerHTML='<h3 tabindex="-1">Resultado</h3><p>'+correct+' de '+queue.length+
+  ' respuestas correctas · '+fmt(correct*10/queue.length)+' / 10.</p><div class="actions">'+
+  (missed.length?'<button id="retry">Repetir falladas</button>':'')+
+  '<button id="review-quiz">Revisar respuestas</button><button id="restart">Reiniciar repaso</button></div>';
+ if(missed.length)byId('retry').onclick=()=>{startQuiz(missed);byId('question-position').focus();};
+ byId('review-quiz').onclick=()=>{queue.forEach(index=>checked.add(index));goToQuestion(0);};
+ byId('restart').onclick=()=>{startQuiz(prompts.keys());byId('question-position').focus();};
+ quiz.querySelector('h3').focus();
+}
+startQuiz(prompts.keys());
+const matchingModules=[["sistemas", "Sistemas y complementación", [["Vaca–becerro", "Sistema orientado a producir becerros al destete."], ["Preengorda", "Fase de crecimiento antes de la terminación."], ["Engorda en corral", "Sistema que controla la oferta de una ración en confinamiento."], ["Complementación", "Aporte para cubrir un déficit detectado en la dieta base."], ["Estiaje", "Periodo seco que puede reducir la oferta de forraje."]]], ["nutrientes", "Consumo, energía y proteína", [["CMS", "Cantidad ingerida excluyendo el agua."], ["ENm", "Energía neta vinculada a las funciones básicas del animal."], ["ENg", "Energía neta vinculada al depósito de nuevos tejidos."], ["Proteína degradable", "Fracción proteica que se degrada en el rumen."], ["Proteína no degradable", "Fracción proteica que escapa de la degradación ruminal."], ["GDP", "Cambio de peso vivo dividido por los días transcurridos."]]], ["ingredientes", "Ingredientes y sus funciones", [["Maíz, sorgo y trigo", "Cereales que aportan principalmente almidón."], ["Pastas de oleaginosas", "Ingredientes proteicos procedentes del procesamiento de semillas oleaginosas."], ["Urea", "Fuente de nitrógeno no proteico."], ["Henos y pajas", "Ingredientes fibrosos conservados en seco."], ["Melaza", "Subproducto rico en azúcares."], ["Carbonato de calcio", "Fuente mineral de calcio."], ["Bicarbonato", "Amortiguador del pH."], ["Ionóforo", "Aditivo que modifica la fermentación ruminal."], ["FDN de forraje", "Fracción de la fibra detergente neutro aportada por los forrajes."]]], ["corral", "Etapas y manejo del corral", [["Recepción", "Manejo alimentario de los primeros días tras la llegada."], ["Iniciación", "Etapa posterior a la llegada orientada a establecer el consumo."], ["Transición", "Fase de adaptación progresiva a una mayor proporción de concentrado."], ["Finalización", "Etapa de engorda previa a la salida."], ["Lectura del comedero", "Evaluación de la cantidad de alimento que quedó de la oferta previa."], ["Consumo estable", "Patrón sostenido que la presentación considera antes de un cambio de dieta."]]], ["seguimiento", "Desempeño y calidad de carne", [["Conversión alimenticia", "Kg de materia seca ingeridos por kg de peso ganado durante el mismo periodo."], ["Madurez", "Desarrollo fisiológico del animal o de la canal."], ["Marmoleo", "Grasa intramuscular visible en el corte."], ["Terneza", "Facilidad con que se corta o mastica la carne."], ["Beta-agonista", "Sustancia que actúa sobre receptores adrenérgicos."], ["Implante", "Forma de administración de ciertos promotores de crecimiento descritos en clase."], ["Rib eye", "Corte de la región costal."], ["Flat iron", "Corte de la región de la paleta."]]], ["actividad-nutrientes", "Nitrógeno, energía, minerales y vitaminas", [["Pastas oleaginosas", "55–85 % de proteína degradable en rumen, según la p. 40."], ["Harinas animales", "55–83 % de proteína no degradable en rumen, según la p. 40."], ["Urea en los ejemplos de clase", "0.5 % en iniciación alta en forraje y 1.3 % en finalización con carbohidratos fácilmente fermentables."], ["Almidón", "La p. 41 destaca 52 % de la ración y lo relaciona con el procesamiento del grano y la acidosis."], ["Grasas", "La p. 41 cita 2–5 % de inclusión y 3 % como límite en el ejemplo con más de 30 % de forraje."], ["Calcio", "0.6–0.9 % en la dieta de referencia. El carbonato es una fuente de este mineral."], ["Potasio en recepción", "1.0–1.2 % según la referencia de la p. 43."], ["Relación nitrógeno:azufre", "10:1 o 15:1, según la p. 45."], ["Vitamina A", "2,200–3,300 UI/kg de materia seca en la p. 46."], ["Vitamina E", "15–60 UI/kg de materia seca en la p. 46."]]]];
+const scores=new Map();
+const totalPairs=matchingModules.reduce((sum,[,,pairs])=>sum+pairs.length,0);
+const matchReport=document.createElement('div');
+matchReport.className='lab';
+matchReport.setAttribute('role','status');
+byId('repaso').querySelector('h2').after(matchReport);
+
+function gradeLabel(correct,total){
+ return fmt(correct*10/total)+' / 10 ('+correct+' de '+total+' aciertos)';
+}
+
+function updateMatchReport(){
+ const graded=[...scores.values()];
+ const attempted=graded.reduce((sum,score)=>sum+score.total,0);
+ const correct=graded.reduce((sum,score)=>sum+score.correct,0);
+ matchReport.textContent=attempted===totalPairs
+  ? 'Calificación global de relación de conceptos: '+gradeLabel(correct,totalPairs)+'.'
+  : 'Relación de conceptos: '+graded.length+' de '+matchingModules.length+' actividades calificadas.'+
+    (attempted?' Calificación parcial: '+gradeLabel(correct,attempted)+'.':'');
+}
+updateMatchReport();
+
+function shuffledIndexes(length){
+ const items=Array.from({length},(_,index)=>index);
+ for(let i=items.length-1;i>0;i--){
+  const j=Math.floor(Math.random()*(i+1));
+  [items[i],items[j]]=[items[j],items[i]];
+ }
+ return items;
+}
+
+function scoreMatches(answers){
+ return answers.reduce((correct,answer,index)=>correct+Number(answer!==''&&Number(answer)===index),0);
+}
+
+matchingModules.forEach(([id,title,pairs],activityIndex)=>{
+ const activity=document.createElement('article');
+ activity.className='lab matching';
+ const order=shuffledIndexes(pairs.length);
+ const options=order.map(index=>'<option value="'+index+'">'+pairs[index][1]+'</option>').join('');
+ activity.innerHTML='<h3>Relaciona conceptos: '+title+'</h3>'+
+  '<details><summary>Repasar los significados</summary><dl>'+
+  pairs.map(([term,definition])=>'<dt><strong>'+term+'</strong></dt><dd>'+definition+'</dd>').join('')+
+  '</dl></details><p>Elige el significado de cada concepto y pulsa <strong>Calificar</strong>. Cada acierto vale lo mismo.</p>'+
+  '<div class="match-exercise">'+pairs.map(([term],index)=>'<div class="match-row"><label>'+term+
+   '<select aria-describedby="match-'+activityIndex+'-'+index+'"><option value="">Elige un significado</option>'+options+
+   '</select></label><p class="match-note" id="match-'+activityIndex+'-'+index+'"></p></div>').join('')+
+  '<div class="actions"><button type="button" data-grade>Calificar</button><button type="button" data-retry>Reintentar actividad</button></div>'+
+  '<p role="status" class="result"></p></div>';
+ byId(id).append(activity);
+ const exercise=activity.querySelector('.match-exercise');
+ const gradeButton=exercise.querySelector('[data-grade]');
+ const retryButton=exercise.querySelector('[data-retry]');
+ const choices=[...exercise.querySelectorAll('select')];
+ const notes=[...exercise.querySelectorAll('.match-note')];
+ const result=exercise.querySelector('.result');
+
+ gradeButton.addEventListener('click',()=>{
+  const answers=choices.map(choice=>choice.value);
+  if(answers.includes('')){
+   result.textContent='Selecciona un significado para cada concepto antes de calificar.';
+   choices[answers.indexOf('')].focus();
+   return;
+  }
+  const correct=scoreMatches(answers);
+  notes.forEach((note,index)=>{
+   const matches=Number(answers[index])===index;
+   note.dataset.result=matches?'correct':'incorrect';
+   note.textContent=(matches?'Correcto. ':'Incorrecto. Significado correcto: ')+pairs[index][1];
+  });
+  result.textContent='Calificación: '+gradeLabel(correct,pairs.length)+'.';
+  scores.set(activityIndex,{correct,total:pairs.length});
+  updateMatchReport();
+  choices.forEach(choice=>choice.disabled=true);
+  gradeButton.disabled=true;
+  retryButton.focus();
+ });
+
+ retryButton.addEventListener('click',()=>{
+  choices.forEach(choice=>{choice.value='';choice.disabled=false;});
+  notes.forEach(note=>{note.textContent='';delete note.dataset.result;});
+  result.textContent='Nuevo intento. La calificación global se actualizará cuando vuelvas a calificar.';
+  gradeButton.disabled=false;
+  choices[0].focus();
+ });
+});
+</script></body></html>
